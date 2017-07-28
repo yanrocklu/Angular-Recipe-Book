@@ -6,10 +6,5 @@ import {Component} from "@angular/core";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  loadedFeature = 'RecipeIsClicked';
-
-  onNavigate(featureNavigated: string) {
-    this.loadedFeature = featureNavigated;
-  }
 
 }

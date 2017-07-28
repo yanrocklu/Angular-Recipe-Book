@@ -1,6 +1,5 @@
 import {EventEmitter} from "@angular/core";
 import {Ingredient} from "../shared/ingredient.model";
-import {RecipeService} from "../recipes/recipe.service";
 
 
 export class ShoppingListService {
@@ -32,6 +31,7 @@ export class ShoppingListService {
     // }
 
     // ... is spread operator, will split array to single ingredients
+    // Spread syntax allows an iterable such as an array expression to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
     this.ingredients.push(...ingredients);
     this.ingredientsChanged.emit(this.ingredients.slice());
   }
