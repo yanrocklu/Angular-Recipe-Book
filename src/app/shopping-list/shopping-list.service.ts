@@ -2,8 +2,9 @@ import {Subject} from "rxjs/Subject";
 import {Ingredient} from "../shared/ingredient.model";
 
 export class ShoppingListService {
-  //inform the component that new data is available
+  //inform the component that new data is available. subject here is for observable
   ingredientsChanged = new Subject<Ingredient[]>();
+  startedEditing = new Subject<number>();
 
   private ingredients: Ingredient[] = [
     new Ingredient('Apples', 5),
@@ -18,12 +19,17 @@ export class ShoppingListService {
     return this.ingredients.slice();
   }
 
+  getIngredient(index:number){
+    return this.ingredients[index];
+  }
+
   addIngredient(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
+    // subject here is for observable. next is to emit a new value
     this.ingredientsChanged.next(this.ingredients.slice());
   }
 
-  addIngredients(ingredients: Ingredient[]){
+  addIngredients(ingredients: Ingredient[]) {
     //this way will be a lot unnecessary event emission
     // for (let ingredient of ingredients){
     //   this.addIngredient(ingredient);

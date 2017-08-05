@@ -24,11 +24,11 @@ const appRoutes: Routes = [
     // canActivate: [AuthGuard],
     // canActivateChild: [AuthGuard],
     component: ShoppingListComponent,
-    children: [
+    // children: [
       // { path: ':id', component: ServerComponent, resolve: {server: ServerResolver} },
-      {path: 'edit', component: ShoppingListEditComponent}
-    ]
-  },
+      // {path: 'edit', component: ShoppingListEditComponent}
+    // ]
+  }
   // { path: 'not-found', component: PageNotFoundComponent },
   // { path: 'not-found', component: ErrorPageComponent, data: {message: 'Page not found!'} },
   // { path: '**', redirectTo: '/not-found' }
