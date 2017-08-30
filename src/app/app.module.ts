@@ -18,8 +18,13 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
 import {RecipeResolverService} from "./recipes/recipe-resolver.service";
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import {RecipeService} from "./recipes/recipe.service";
+import {DataStorageService} from "./shared/data-storage.service";
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import {AuthService} from "./auth/auth.service";
 
 @NgModule({
+
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -31,8 +36,11 @@ import {RecipeService} from "./recipes/recipe.service";
     ShoppingListEditComponent,
     DropdownDirective,
     RecipeStartComponent,
-    RecipeEditComponent
+    RecipeEditComponent,
+    SigninComponent,
+    SignupComponent
   ],
+
   imports: [
     BrowserModule,
     FormsModule,
@@ -40,7 +48,8 @@ import {RecipeService} from "./recipes/recipe.service";
     HttpModule,
     AppRoutingModule
   ],
-  providers: [ShoppingListService, RecipeResolverService, RecipeService],
+
+  providers: [ShoppingListService, RecipeResolverService, RecipeService, DataStorageService, AuthService],
 
   bootstrap: [AppComponent]
 })
