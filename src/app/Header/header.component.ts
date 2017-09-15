@@ -1,8 +1,8 @@
 import {Component} from "@angular/core";
 import {Response} from "@angular/http";
-
 import {DataStorageService} from "../shared/data-storage.service";
 import {RecipeService} from "../recipes/recipe.service";
+import {AuthService} from "../auth/auth.service";
 
 @Component({
   selector: 'app-header',
@@ -12,7 +12,8 @@ import {RecipeService} from "../recipes/recipe.service";
 
 export class HeaderComponent {
   constructor(private dataStorageService: DataStorageService,
-              private recipeService: RecipeService) {
+              private recipeService: RecipeService,
+              private authService: AuthService) {
   }
 
   onSaveData() {
@@ -26,6 +27,10 @@ export class HeaderComponent {
 
   onFetchData() {
     this.dataStorageService.fetchRecipes();
+  }
+
+  onLogout(){
+    this.authService.logOut();
   }
 
 }
