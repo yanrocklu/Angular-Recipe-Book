@@ -5,17 +5,11 @@ import {HttpModule} from "@angular/http";
 import {AppComponent} from "./app.component";
 import {HeaderComponent} from "./Header/header.component";
 import {ShoppingListComponent} from "./shopping-list/shopping-list.component";
-import {RecipesComponent} from "./recipes/recipes.component";
-import {RecipeListComponent} from "./recipes/recipe-list/recipe-list.component";
-import {RecipeDetailComponent} from "./recipes/recipe-detail/recipe-detail.component";
-import {RecipeItemComponent} from "./recipes/recipe-list/recipe-item/recipe-item.component";
 import {ShoppingListEditComponent} from "./shopping-list/shopping-list-edit/shopping-list-edit.component";
 import {DropdownDirective} from "./shared/dropdown.directive";
 import {ShoppingListService} from "./shopping-list/shopping-list.service";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
-import {RecipeStartComponent} from "./recipes/recipe-start/recipe-start.component";
 import {RecipeResolverService} from "./recipes/recipe-resolver.service";
-import {RecipeEditComponent} from "./recipes/recipe-edit/recipe-edit.component";
 import {RecipeService} from "./recipes/recipe.service";
 import {DataStorageService} from "./shared/data-storage.service";
 import {SignupComponent} from "./auth/signup/signup.component";
@@ -25,22 +19,17 @@ import {AuthGuard} from "./auth/auth-guard.service";
 
 @NgModule({
 
+  // declarations declares components, directives, pipes
   declarations: [
     AppComponent,
     HeaderComponent,
     ShoppingListComponent,
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
     ShoppingListEditComponent,
     DropdownDirective,
-    RecipeStartComponent,
-    RecipeEditComponent,
     SigninComponent,
     SignupComponent
   ],
-
+  // imports defines which other modules does this module use
   imports: [
     BrowserModule,
     FormsModule,
@@ -49,13 +38,14 @@ import {AuthGuard} from "./auth/auth-guard.service";
     AppRoutingModule
   ],
 
+  // providers defines services used in this app,
   providers: [ShoppingListService,
               RecipeResolverService,
               RecipeService,
               DataStorageService,
               AuthService,
               AuthGuard],
-
+  // bootstrap defines what's the root component
   bootstrap: [AppComponent]
 })
 export class AppModule {
