@@ -9,6 +9,7 @@ import {RecipeEditComponent} from "./recipe-edit/recipe-edit.component";
 import {RecipeItemComponent} from "./recipe-list/recipe-item/recipe-item.component";
 import {RecipeDetailComponent} from "./recipe-detail/recipe-detail.component";
 import {RecipesRoutingModule} from "./recipes-routing.module";
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
   declarations:[
@@ -23,7 +24,8 @@ import {RecipesRoutingModule} from "./recipes-routing.module";
     //CommonModule used to import common modules, usually used in feature modules
     CommonModule,
     ReactiveFormsModule,
-    RecipesRoutingModule
+    RecipesRoutingModule,
+    SharedModule
   ]
 })
 
