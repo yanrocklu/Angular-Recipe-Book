@@ -6,7 +6,7 @@ import {AppComponent} from "./app.component";
 
 import {HeaderComponent} from "./Header/header.component";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
-import {RecipeResolverService} from "./recipes/recipe-resolver.service";
+// import {RecipeResolverService} from "./recipes/recipe-resolver.service";
 import {RecipeService} from "./recipes/recipe.service";
 import {DataStorageService} from "./shared/data-storage.service";
 import {AuthService} from "./auth/auth.service";
@@ -16,13 +16,15 @@ import {SharedModule} from "./shared/shared.module";
 import {ShoppingListModule} from "./shopping-list/shopping-list.module";
 import {AuthModule} from "./auth/auth.module";
 import {ShoppingListService} from "./shopping-list/shopping-list.service";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
 
   // declarations declares components, directives, pipes
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   // imports defines which other modules does this module use
   // here the "imports" is different from the "import" at the top. Here the "imports" can be recognized bt Angular
@@ -39,8 +41,8 @@ import {ShoppingListService} from "./shopping-list/shopping-list.service";
   ],
 
   // providers defines services used in this app,
-  providers: [RecipeResolverService,
-              RecipeService,
+  providers: [RecipeService,
+              // RecipeResolverService,
               DataStorageService,
               ShoppingListService,
               AuthService,
