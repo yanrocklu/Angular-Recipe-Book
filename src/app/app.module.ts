@@ -1,9 +1,9 @@
 // Here the "import" is used by typescript, not by Angular
 import {BrowserModule} from "@angular/platform-browser";
 import {NgModule} from "@angular/core";
-import {FormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
 import {AppComponent} from "./app.component";
+
 import {HeaderComponent} from "./Header/header.component";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
 import {RecipeResolverService} from "./recipes/recipe-resolver.service";
