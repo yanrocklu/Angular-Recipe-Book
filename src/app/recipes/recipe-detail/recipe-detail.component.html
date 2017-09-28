@@ -17,12 +17,12 @@
         class="btn-group"
         appDropdown>
       <!--if not signin, doesn't show the manage dropdown list-->
-      <button type="button" class="btn btn-primary dropdown-toggle" *ngIf="authService.isAuthenticated()">
+      <button type="button" class="btn btn-primary dropdown-toggle" *ngIf="isAuthenticated()">
         Manage Recipe <span class="caret"></span>
       </button>
       <ul class="dropdown-menu">
         <li><a
-            (click)="onAddToShoppingList(recipe.ingredients)" style="cursor: pointer;">To Shopping List</a></li>
+            (click)="onAddToShoppingList()" style="cursor: pointer;">To Shopping List</a></li>
         <li><a style="cursor: pointer;" (click)="onEditRecipe()">Edit Recipe</a></li>
         <li><a style="cursor: pointer;" (click)="onDeleteRecipe()">Delete Recipe</a></li>
       </ul>

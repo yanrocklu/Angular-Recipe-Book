@@ -13,12 +13,12 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <!--You can have multiple elements inside <ng-template>. [ngIf] is the "normal" form of the directive, it uses property binding to receive the condition and decide if the template content should be rendered or not. *ngIf is converted to [ngIf] + <ng-template> behind the scenes and simply gives you an easier way of using *ngIf.-->
-        <ng-template [ngIf]="!authService.isAuthenticated()">
+        <ng-template [ngIf]="!isAuthenticated()">
           <li><a routerLink="/signup">Register</a></li>
           <li><a routerLink="/signin">Login</a></li>
         </ng-template>
 
-        <li class="dropdown" appDropdown *ngIf="authService.isAuthenticated()">
+        <li class="dropdown" appDropdown *ngIf="isAuthenticated()">
           <a style="cursor: pointer;" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <!--when the cursor is over the link, show a hand-->
@@ -26,7 +26,7 @@
             <li><a style="cursor: pointer;" (click)="onFetchData()">Fetch Data</a></li>
           </ul>
         </li>
-        <li *ngIf="authService.isAuthenticated()"><a style="cursor:pointer;" (click)="onLogout()">Logout</a></li>
+        <li *ngIf="isAuthenticated()"><a style="cursor:pointer;" (click)="onLogout()">Logout</a></li>
       </ul>
     </div>
   </div>

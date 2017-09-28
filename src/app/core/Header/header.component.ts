@@ -32,4 +32,10 @@ export class HeaderComponent {
     this.authService.logOut();
   }
 
+  // create a function to use authService, it cannot used in html file, the AoT compilation would error out
+  // error msg is: "Property 'authService' is private and only accessible within class 'HeaderComponent' "
+  isAuthenticated(){
+    return this.authService.isAuthenticated();
+  }
+
 }

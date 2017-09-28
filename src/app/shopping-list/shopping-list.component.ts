@@ -38,4 +38,8 @@ export class ShoppingListComponent implements OnInit, OnDestroy {
     this.subscription.unsubscribe();
   }
 
+  isAuthenticated(){
+    return this.authService.isAuthenticated();
+  }
+
 }

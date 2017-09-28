@@ -110,4 +110,14 @@ export class RecipeEditComponent implements OnInit {
     });
   }
 
+  // create functions to use recipeForm, it cannot used in the html file, would error out
+  // error msg is : "Property 'controls' does not exist on type 'AbstractControl'"
+  getRecipeForms(){
+    return this.recipeForm;
+  }
+
+  getReipeFormsIngredientsArray(){
+    return (<FormArray>this.recipeForm.get('ingredients'));
+  }
+
 }

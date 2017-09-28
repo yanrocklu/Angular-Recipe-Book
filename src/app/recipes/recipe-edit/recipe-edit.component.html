@@ -12,7 +12,7 @@
           <button
               type="submit"
               class="btn btn-success"
-              [disabled]="!recipeForm.valid">Save
+              [disabled]="!getRecipeForms().valid">Save
           </button>
           <button
               type="button"
@@ -72,7 +72,7 @@
       <div class="row">
         <!--Udemy lecture 212, sync HTML with the ingredients array form control-->
         <div class="col-xs-12" formArrayName="ingredients">
-          <div class="row" *ngIf="recipeForm.get('ingredients').value.length !== 0">
+          <div class="row" *ngIf=" getReipeFormsIngredientsArray().value.length !== 0">
             <div class="col-xs-7">
               <label for="ingredientName">Ingredient Name</label>
             </div>
@@ -82,7 +82,7 @@
           </div>
           <div
               class="row"
-              *ngFor="let ingredientCtrl of recipeForm.get('ingredients').controls; let i = index"
+              *ngFor="let ingredientCtrl of getReipeFormsIngredientsArray().controls; let i = index"
               [formGroupName]="i"
               style="margin-top: 10px">
             <div class="col-xs-7">

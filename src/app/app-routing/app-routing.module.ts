@@ -7,7 +7,7 @@ import {HomeComponent} from "../core/home/home.component";
 const appRoutes: Routes = [
   // {path: '', redirectTo: '/recipes', pathMatch: 'full'},
   {path: '', component: HomeComponent},
-  // laze loading, only loaded when we call this feature
+  // lazy loading, only loaded when we call this feature
   {path: 'recipes', loadChildren: '../recipes/recipes.module#RecipesModule'},
   {path: 'shopping-list', component: ShoppingListComponent}
 
