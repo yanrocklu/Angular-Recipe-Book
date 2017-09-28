@@ -1,0 +1,4 @@
+1. Here is all you need to know about relative file paths:
+    Starting with "/" returns to the root directory and starts there
+    Starting with "../" moves one directory backward and starts there
+    ./ is the the folder that the working file is in

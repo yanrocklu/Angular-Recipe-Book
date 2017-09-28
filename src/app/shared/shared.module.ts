@@ -14,5 +14,7 @@ import {DropdownDirective} from "./dropdown.directive";
     CommonModule,
     DropdownDirective
   ]
+
+  // Don't provide Services in Shared Modules! Especially not, if you plan to use then in Lazy Loaded Modules!
 })
 export class SharedModule {}
