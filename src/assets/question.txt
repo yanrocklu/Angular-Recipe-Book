@@ -2,3 +2,12 @@
     Check if a token is present at application startup (check the localStorage manually or use the Firebase SDK to do so - just make sure that you somehow wait for the SDK to finish its initialization
 
 2. cannot commont inside array? object?
+
+3. unit test
+    can second test use property/variables defined in first test? Can test sth not defined in test but used in app?
+    eg.
+    it('test 1')
+    let userService = ...
+
+    it ('test 2')
+    expect(...).toEqual(app.user.name)
