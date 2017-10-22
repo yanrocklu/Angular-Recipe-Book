@@ -6,6 +6,9 @@
   <div class="col-xs-12">
     <!--use [] because we need to pass some data the the directive via property binding, the data is recipeForm-->
     <!--sync HTML with the recipeForm-->
+    <!--FormGroup Tracks the value and validity state of a group of FormControl instances.
+    A FormGroup aggregates the values of each child FormControl into one object, with each control name as the key. It calculates its status by reducing the statuses of its children. For example, if one of the controls in a group is invalid, the entire group becomes invalid.
+    FormGroup is one of the three fundamental building blocks used to define forms in Angular, along with FormControl and FormArray.-->
     <form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
       <div class="row">
         <div class="col-xs-12">

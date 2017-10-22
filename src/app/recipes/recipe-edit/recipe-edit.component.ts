@@ -27,7 +27,7 @@ export class RecipeEditComponent implements OnInit {
           // use + to convert string to number
           this.id = +params['id'];
           this.editMode = params["id"] != null;
-          //  call initForm whenever the route params change, because that indcates we reload the page.
+          //  call initForm whenever the route params change, because that indicates we reload the page.
           this.initForm();
         }
       );
