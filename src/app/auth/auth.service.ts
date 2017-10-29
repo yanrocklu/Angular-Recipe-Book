@@ -48,31 +48,9 @@ export class AuthService {
         (token: string) => this.token = token
       )
     return this.token;
-    ;
   }
 
   isAuthenticated() {
-    // if (this.token === undefined) {
-    //   if (!firebase.auth().currentUser) {
-    //     let hasLocalStorageUser = false;
-    //     for (let key in localStorage) {
-    //       if (key.startsWith("firebase:authUser:")) {
-    //         hasLocalStorageUser = true;
-    //         let localStorageObject = JSON.parse(localStorage[key]);
-    //         let token = localStorageObject.stsTokenManager.accessToken;
-    //         // console.log(token);
-    //         this.token = token;
-    //       }
-    //     }
-    //     if (!hasLocalStorageUser) {
-    //       console.log('Attempting to access a secure route. Please authenticate first.');
-    //       // replace({
-    //       // pathname: '/login',
-    //       // state: { nextPathname: nextState.location.pathname }
-    //       // });
-    //     }
-    //   }
-    // }
     return this.token != null;
   }
 }

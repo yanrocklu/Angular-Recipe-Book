@@ -11,6 +11,7 @@
         <li routerLinkActive="active"><a routerLink="/recipes">Recipes</a></li>
         <li routerLinkActive="active"><a routerLink="/shopping-list">Shopping List</a></li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
         <!--You can have multiple elements inside <ng-template>. [ngIf] is the "normal" form of the directive, it uses property binding to receive the condition and decide if the template content should be rendered or not. *ngIf is converted to [ngIf] + <ng-template> behind the scenes and simply gives you an easier way of using *ngIf.-->
         <ng-template [ngIf]="!isAuthenticated()">

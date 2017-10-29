@@ -4,7 +4,6 @@ import "rxjs/Rx";
 import {RecipeService} from "../recipes/recipe.service";
 import {Recipe} from "../recipes/recipe.model";
 import {AuthService} from "../auth/auth.service";
-import {tokenize} from "@angular/compiler/src/ml_parser/lexer";
 
 @Injectable()
 export class DataStorageService {
