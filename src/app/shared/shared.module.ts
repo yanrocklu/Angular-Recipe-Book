@@ -11,7 +11,7 @@ import {DropdownDirective} from "./dropdown.directive";
   ],
   // and export as a module, then can be used in multiple components
   exports:[
-    CommonModule,
+    // CommonModule,
     DropdownDirective
   ]
 

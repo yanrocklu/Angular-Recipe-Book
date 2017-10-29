@@ -23,7 +23,7 @@ import {CoreModule} from "./core/core.module";
     // this browser module contains all the features in CommonModule and additional features only used when app starts
     BrowserModule,
     HttpModule,
-    AppRoutingModule,
+    // AppRoutingModule,
     ShoppingListModule,
     AuthModule,
     SharedModule,

@@ -8,6 +8,7 @@ import {RecipeService} from "../recipes/recipe.service";
 import {DataStorageService} from "../shared/data-storage.service";
 import {ShoppingListService} from "../shopping-list/shopping-list.service";
 import {AuthService} from "../auth/auth.service";
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {AuthService} from "../auth/auth.service";
     HomeComponent
   ],
   imports: [
+    CommonModule,
     SharedModule,
     AppRoutingModule
   ],
@@ -26,7 +28,8 @@ import {AuthService} from "../auth/auth.service";
   ],
 
   // providers defines services used in this app,
-  providers: [RecipeService,
+  providers: [
+    RecipeService,
     DataStorageService,
     ShoppingListService,
     AuthService
