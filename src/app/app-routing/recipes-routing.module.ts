@@ -9,7 +9,7 @@ import {RecipeEditComponent} from "../recipes/recipe-edit/recipe-edit.component"
 import {RecipeDetailComponent} from "../recipes/recipe-detail/recipe-detail.component";
 import {AuthGuard} from "../auth/auth-guard.service";
 
-const recipeRouters: Routes = [
+const recipeRoutes: Routes = [
   {
     path: '', component: RecipesComponent,
     children: [
@@ -26,7 +26,7 @@ const recipeRouters: Routes = [
 
   // moved the AuthGuard service from AppModule to this recipe module because it only used here
 
-  imports:[RouterModule.forChild(recipeRouters)],
+  imports:[RouterModule.forChild(recipeRoutes)],
   exports: [RouterModule],
   providers: [AuthGuard]
 })

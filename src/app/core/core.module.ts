@@ -16,6 +16,7 @@ import {CommonModule} from "@angular/common";
     HomeComponent
   ],
   imports: [
+    //CommonModule used to import common modules, usually used in feature modules
     CommonModule,
     SharedModule,
     AppRoutingModule
