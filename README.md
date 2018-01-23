@@ -1,17 +1,31 @@
 # ShoppingList
+```
+> git clone https://github.com/yanrocklu/Angular-Recipe-Book.git
+> cd Angular-Recipe-Book
+> npm install
+> ng serve
+
+To sign in the project 
+
+> User :      admin@admin.com
+> password:   123456
+```
 
 Implementing with Angular 4 features followed the [Udemy course](https://www.udemy.com/the-complete-guide-to-angular-2/learn/v4/overview) by Maximilian Schwarzmüller .
 
-This project is a recipe book single page application that allows users to browse/edit recipes and manage a shopping list. A Firebase backend is used for data storage and authentication. Authenticated users can then edit recipes, save and fetch data from the Firebase database.
+This project is a recipe book that allows users to browse/edit recipes and manage a shopping list. A Firebase backend is used for data storage and authentication. Authenticated users can then edit recipes, save and fetch data from the Firebase database.
+It's a comprehensive Angular single page application covering all the Angular 4 updates. The project focuses on the key features and skills required to successfully implement a modern angular application. 
 
 Angular 4 features exhibits in this project:
-- directives, components & databinding.
+- directives, components & databinding;
 - services & dependency injection;
 - forms (both template-driven and reactive);
 - routing;
 - observables;
 - HTTP request handling;
+- modules;
 - authentication & route protection;
+- Firebase & AWS deployment.
 
 This project was generated with Angular CLI version 1.3.0.
 
