@@ -15,15 +15,43 @@ export class RecipeService {
       'This is Fei Chang',
       'http://maxpixel.freegreatpicture.com/static/photo/1x/Cooking-Delicious-Korean-Food-Recipe-Asia-822090.jpg',
       [new Ingredient('Fei Chang', 2),
-        new Ingredient('Green Onion', 2),
+        new Ingredient('Green Onion', 2)
       ]),
     new Recipe(
       'Chili Soup',
       'This is Chili',
       'https://c1.staticflickr.com/3/2547/3862672238_30d378e7d6.jpg',
       [new Ingredient('Red Bean', 200),
-        new Ingredient('Meat', 1),
+        new Ingredient('Meat', 1)
+      ]),
+    new Recipe(
+      'Apple Pie',
+      'This is Apple Pie',
+      'https://upload.wikimedia.org/wikipedia/commons/4/4b/Apple_pie.jpg',
+      [new Ingredient('Apple', 2),
+        new Ingredient('Flour', 2)
+      ]),
+    new Recipe(
+      'Steak',
+      'This is tasty steak',
+      'https://cdn.pixabay.com/photo/2017/04/30/09/30/steak-2272464_960_720.jpg',
+      [new Ingredient('New York strip steak', 1),
+        new Ingredient('Black Pepper', 1),
+        new Ingredient('Thyme Sprigs', 2),
+        new Ingredient('Butter', 2)
+      ]),
+    new Recipe(
+      'Pasta',
+      'This is a big burger',
+      'https://cdn.pixabay.com/photo/2017/12/29/12/56/burger-3047550_960_720.jpg',
+      [new Ingredient('Egg', 1),
+        new Ingredient('Ground Beef', 1),
+        new Ingredient('Onion', 1),
+        new Ingredient('tomato', 1),
+        new Ingredient('Lettuce', 1)
       ])
+
+
   ];
 
   constructor(private slService: ShoppingListService) {
