@@ -1,4 +1,4 @@
-# ShoppingList
+# RecipeBook
 ```
 > git clone https://github.com/yanrocklu/Angular-Recipe-Book.git
 > cd Angular-Recipe-Book
