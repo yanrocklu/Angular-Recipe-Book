@@ -25,7 +25,7 @@ Angular 4 features exhibits in this project:
 - HTTP request handling;
 - modules;
 - authentication & route protection;
-- Optimizing an Angular App;
+- AoT compilation & Optimizing an Angular App;
 - Firebase & AWS deployment.
 
 This project was generated with Angular CLI version 1.3.0.
