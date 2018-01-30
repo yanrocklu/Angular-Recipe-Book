@@ -8,6 +8,8 @@ export class ShoppingListService {
 
   private ingredients: Ingredient[] = [
     new Ingredient('Apples', 5),
+    new Ingredient('Egg', 10),
+    new Ingredient('Onion', 2),
     new Ingredient('Tomatoes', 10)
   ];
 
